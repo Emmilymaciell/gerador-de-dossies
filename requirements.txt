@@ -1,0 +1,9 @@
+# medido no levantamento da Fase 7 (versoes instaladas no py -3.12 em 2026-10-11)
+customtkinter==5.2.2
+pillow==12.1.0
+python-docx==1.2.0
+PyMuPDF==1.26.7
+openpyxl==3.1.5
+pypdf==6.6.2
+pywin32==311
+# build do executavel: pyinstaller==6.19.0

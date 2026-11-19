@@ -1,0 +1,40 @@
+# padrao de escritorio (CLAUDE.md global)
+~$*
+*.tmp
+.~lock.*
+Thumbs.db
+desktop.ini
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+*.log
+/temp/
+/scratch/
+/artifacts/
+# segredos
+.env
+.env.*
+# build e binarios
+/build/
+/dist/
+*.exe
+*.zip
+*.rar
+# dados e saidas (Drive/SharePoint, nunca Git)
+*.pdf
+*.csv
+*.jsonl
+*.xlsx
+*.xlsm
+*.msg
+_logs/
+# especificos
+/[0-9][0-9] - */
+Manifesto.json
+Dossiê Mensal - *
+Levantamento de Documentos sem PDF*
+# versao publica: saida e dados de exemplo gerados localmente
+/saida/
+/examples/produtos/

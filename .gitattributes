@@ -1,0 +1,2 @@
+# preserva os bytes dos arquivos (sem conversao de EOL)
+* -text
