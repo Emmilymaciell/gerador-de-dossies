@@ -75,7 +75,6 @@ Decisões de desenho visíveis no código:
 | Fases do fluxo | 3 (base, final direto, revisão) | código |
 | Executável empacotado | ~107 MB | `docs/STATE.md` |
 | Testes automatizados | nenhum (smoke = `py_compile`) | `docs/STATE.md` |
-| Dossiês gerados / tempo economizado por mês | `[a confirmar pela autora]` | — |
 
 ## Como rodar (dados fictícios)
 
@@ -106,6 +105,14 @@ Modelos de capa em Word são opcionais — ver [`CAPAS/README.md`](CAPAS/README.
 
 Executável (opcional): `pyinstaller app.spec`.
 
+## Limitações conhecidas
+
+- Só roda em **Windows com Microsoft Word** (DOCX → PDF via COM).
+- Não há suíte de testes automatizada: a verificação é `py_compile` mais a execução ponta a ponta com os dados fictícios.
+- A classificação por grupo/produto é heurística (pasta → nome do arquivo → texto do PDF) e depende das convenções de nome e código (`P1.1`, `P2.3`…); arquivo fora do padrão precisa de correção na fase de revisão.
+- A fase 1 apaga e recria a pasta do mês na saída, a menos que receba `--no-clean`.
+- O executável empacotado com PyInstaller tem ~107 MB.
+
 ## O que eu decidi × o que a IA gerou
 
 | Eu (Emmily) decidi | Gerado com apoio de IA (Claude Code / Codex), sob minha revisão |
@@ -117,8 +124,7 @@ Executável (opcional): `pyinstaller app.spec`.
 | Modelos Word de capa (autoria declarada no projeto privado; substituídos por capas genéricas nesta versão) | Ajustes de robustez (caminhos longos no Windows, sessão do Word, fallbacks) |
 
 Base: histórico do projeto (`docs/STATE.md`) e o README de trabalho
-([`docs/README-original-sanitizado.md`](docs/README-original-sanitizado.md)). A divisão fina por arquivo
-`[a confirmar pela autora]`.
+([`docs/README-original-sanitizado.md`](docs/README-original-sanitizado.md)).
 
 ## Stack
 
